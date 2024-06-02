@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="album-cover">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assests/imgs/img1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assests/imgs/img2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assests/imgs/img3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assests/imgs/img4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assests/imgs/img5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assests/imgs/img6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assests/imgs/img7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="music-player">
+        <h1>Title</h1>
+        <p>SongName</p>
+
+        <audio src="./assests/Music/mp3-01.mp3" type="audio/mp3" id="song"></audio>
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <button class="backward">
+                <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="play-pause-btn">
+                <i class="fa-solid fa-play" id="controlicon"></i>
+            </button>
+            <button class="forward">
+                <i class="fa-solid fa-forward"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./assests/javascript/script.js"></script>
+</html>
